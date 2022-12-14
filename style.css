@@ -73,7 +73,10 @@ header {
   left: 0;
   width: 100%;
   pointer-events: none;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
+}
+
+.parallax img#nuvem-meio, img#nuvem-fundo, img#nuvem-frente, img#foguete  {
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
 }
 
 .parallax img#foguete {
@@ -144,9 +147,16 @@ h1 {
     width: 100%;
     pointer-events: none;
     -webkit-filter: drop-shadow(3px 3px 3px #222);
-    transition: 0.5s;
   }
   
+  .parallax img#estrelas{
+    position: absolute;
+    bottom: 20rem;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
 .parallax img#foguete {
   bottom: 12rem;
 }
