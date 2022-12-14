@@ -110,6 +110,7 @@ h1 {
 .rodape a{
   display: flex;
   justify-content: center;
+  align-items: center;
   bottom: 0;
   font-size: 3rem;
   color: #fff;
