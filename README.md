@@ -23,3 +23,7 @@ Para criar as .svgs. A .svg demanda menos recursos então é mais performática,
 
 ##### Obs.:
 Eu havia usado /assets/svg para as .svgs mas o github pages não colaborou, removi elas das pastas e larguei na raíz. Engraçado que as .pngs funcionam dentro da assets, e o projeto funciona no Live Server. É algum bug ou algo que eu não sei como corrigir, dentro do github pages.
+
+# NAVEGAÇÃO:
+## QUERO CONHECER! > _conteudo.html_
+## QUERO EMBARCAR! > _signup.html_
