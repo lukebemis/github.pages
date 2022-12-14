@@ -19,4 +19,4 @@ Para criar as .svgs. A .svg demanda menos recursos então é mais performática,
 
 # NAVEGAÇÃO:
 ## QUERO CONHECER! > _conteudo.html_
-## QUERO EMBARCAR! > _signup.html_
+## QUERO EMBARCAR! > _signup.html_ 
