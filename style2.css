@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", serif;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background: rgb(20, 1, 36);
+  color: #fff;
+
+}
+.container {
+  padding: 1.1rem;
+  min-height: 100vh;
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-rows: minmax(18rem, auto);
+  margin: 2.5rem;
+  grid-auto-flow: dense;
+  grid-gap: 0.7rem;
+  font-size: 1.25rem;
+}
+
+.container .caixa {
+  padding: 1.25rem;
+  background: rgb(29, 5, 49);
+  border-radius: 0.3rem;
+  display: grid;
+  place-items: center;
+  border: 0.1rem solid rgb(174, 0, 255);
+  text-align: center;
+  transition: 0.2s;
+}
+
+.container .caixa:hover {
+  background: rgb(119, 0, 255);
+  box-shadow: 0rem 0rem 1.1rem rgb(114, 0, 207);
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
+.container .caixa img {
+  position: relative;
+  max-width: 6.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.container .caixa:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.container .caixa:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.container .caixa:nth-child(4) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.container .caixa:nth-child(5) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.container .caixa:nth-child(7) {
+  grid-column: span 6;
+  grid-row: span 1;
+  font-size: 3rem;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .container .caixa {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}
