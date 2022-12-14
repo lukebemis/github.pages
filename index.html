@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Zero to Hero</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="nome">Lucas Ritter</a>
+      <ul class="nav-menu">
+        <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/conte%C3%BAdo.html" class="nav-link">O Bootcamp</a></li>
+        <li><a href="http://127.0.0.1:5500/signup.html" class="nav-link">Quero Participar</a></li>
+        <li><a href="https://github.com/lukebemis" class="nav-link">GitHub</a></li>
+      </ul>
+      <i class="hamburguer --one"></i>
+      <i class="hamburguer --two"></i>
+      <i class="hamburguer --three"></i>
+    </header>
+    <section class="parallax">
+      <h2 id="titulo">From Zero to Hero</h2>
+      <img src="/assets/svg/estrelas.svg" alt="estrelas" id="estrelas" />
+      <img
+        src="/assets/svg/nuvem-fundo.svg"
+        alt="nuvem-fundo"
+        id="nuvem-fundo"
+      />
+      <img src="/assets/svg/nuvem-meio.svg" alt="nuvem-meio" id="nuvem-meio" />
+      <img
+        src="/assets/svg/nuvem-frente.svg"
+        alt="nuvem-frente"
+        id="nuvem-frente"
+      />
+      <img src="/assets/svg/foguete.svg" alt="foguete" id="foguete" />
+      <img src="/assets/svg/planeta.svg" alt="planeta" id="planeta" />
+    </section>
+    <br><br><br><br><br><br><br><br><br>
+    <footer><div class="rodape"><a href="http://127.0.0.1:5500/conteudo.html">Quero Conhecer!</a></div></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <script>
+      gsap.to("#estrelas", {
+        scrollTrigger : {
+          scrub: true
+        },
+        y: -150,
+
+      });
+
+      gsap.to("#foguete", {
+        scrollTrigger : {
+          scrub: true
+        },
+        y: -780,
+        scale: 1.5,
+        ease: 100,
+      });
+
+      gsap.to("#titulo", {
+        scrollTrigger : {
+          scrub: true
+        },
+        y: -900,
+        x: -250,
+        ease: 20,
+      });
+
+      gsap.to("#nuvem-fundo", {
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 29,
+        scale: 1.1,
+        ease: 20,
+      });
+
+      gsap.to("#nuvem-meio", {
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+        scale: 1.1,
+        ease: 20,
+      });
+
+      gsap.to("#nuvem-frente", {
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+        scale: 1.1,
+        ease: 20,
+
+      });
+      gsap.to("#planeta", {
+        scrollTrigger : {
+          scrub: true
+        },
+        scale: 2,
+        ease: 20,
+      });
+    </script>
+  </body>
+</html>
