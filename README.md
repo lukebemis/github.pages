@@ -18,6 +18,7 @@ O github pages não respeitou o _ico da página, clonar o repositório soluciona
 ![Illustrator](https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)&nbsp;
 Para criar as .svgs. A .svg demanda menos recursos então é mais performática, também traz mais liberdade na hora de alterar alguma coisa (como pngs e jpeg não tem, se você não tiver o arquivo original) já que você altera como código, e também são bastante utilizadas pra animação com CSS, que inicalmente eu iria usar, mas como falei, optei pelo _gsap._
 
+# POR ALGUM MOTIVO, AS SVGS DEMORAM A CARREGAR NO GITHUB PAGES. SE APARECER QUEBRADO, NÃO ESTÁ ASSIM, É UM LOADING ESQUISITO. Como eu menciono aqui abaixo, elas estão na raíz, são chamadas mas mesmo assim "quebram". Agora pouco fechei a página e reabri quebraram, não previ que poderia ter esse problema.
 
 
 
