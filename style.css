@@ -76,7 +76,7 @@ header {
 }
 
 .parallax img#nuvem-meio, img#nuvem-fundo, img#nuvem-frente, img#foguete  {
-  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  -webkit-filter: drop-shadow(4px -1px 2px #222);
 }
 
 .parallax img#foguete {
