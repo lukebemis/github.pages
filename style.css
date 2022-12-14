@@ -137,13 +137,13 @@ h1 {
   body {
     min-height: 150vh;
   }
-  .parallax img {
+  .parallax img#foguete, img#nuvem-frente, img#nuvem-meio, img#nuvem-fundo {
     position: absolute;
     bottom: 20rem;
     left: 0;
     width: 100%;
     pointer-events: none;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(3px 3px 3px #222);
     transition: 0.5s;
   }
   
