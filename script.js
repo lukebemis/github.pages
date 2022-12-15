@@ -1,19 +1,60 @@
+function check(){
+  var input = document.getElementById("password").value;
+  var input2 = document.getElementById("password2").value;
 
-const hamburguer = document.querySelector(".hamburguer");
-const navMenu = document.querySelector(".nav-menu");
+  input = input.trim();
+  document.getElementById("password").value = input;
+  
+    if(input.length >= 8){
+    document.getElementById("check1").style.color = "rgb(66, 236, 89)";
+  }else{
+    document.getElementById("check1").style.color = "rgb(236, 66, 66)";
+  }
 
-hamburger.addEventListener("click", mobileMenu);
+    if(input.match(/[0-9]/i)) {
+      document.getElementById("check2").style.color = "rgb(66, 236, 89)";
+    } else {
+      document.getElementById("check2").style.color = "rgb(236, 66, 66)";
+    }
+    
+    if(input.match(/[A-Za-z]/i)){
+      document.getElementById("check3").style.color = "rgb(66, 236, 89)";
+    } else {
+      document.getElementById("check3").style.color = "rgb(236, 66, 66)";
+    }
+    
+    if(input.match(/[!@#$%&*-]/i)){
+      document.getElementById("check4").style.color = "rgb(66, 236, 89)";
+    } else {
+      document.getElementById("check4").style.color = "rgb(236, 66, 66)";
+    }
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
+    if(input.match(/[!@#$%&*-]/i)){
+      document.getElementById("check4").style.color = "rgb(66, 236, 89)";
+    }else{
+      document.getElementById("check4").style.color = "rgb(236, 66, 66)";
+    }
 
-const navLink = document.querySelectorAll(".nav-link");
+    if(input === input2){
+      document.getElementById("check5").style.color = "rgb(66, 236, 89)";
+    }else{
+      document.getElementById("check5").style.color = "rgb(236, 66, 66)";
+    }
+} // curly fim da funcao
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+
+
+
+
+
+
+
+
+
+
+const element = document.getElementById("alerta");
+element.addEventListener("click", alerta)
+function alerta() {
+  alert("Ainda não há opção de recuperação de senha, sinto muito!")
 }
