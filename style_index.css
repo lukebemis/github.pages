@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Mono", serif;
+  text-decoration: none;
+  list-style: none;
 }
 body {
   overflow-x: hidden;
@@ -16,6 +18,60 @@ body {
   max-height: 100vh;
 }
 
+nav {
+  position: absolute;
+  height: 2rem;
+  width: 100%;
+}
+
+label.nome {
+  color: #7008b0;
+  font-size: 1.25rem;
+  line-height: 4rem;
+  padding: 0 3rem;
+  font-weight: bold;
+}
+
+nav ul {
+  margin-top: -3rem;
+  float:right;
+  margin-right: 1.25rem;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 2rem;
+  margin: 0 0;
+  height: 10rem;
+  opacity: 100%;
+}
+nav ul li a {
+  background:#fff;
+  color: #7008b0;
+  font-size: 1rem;
+  margin: 0.15rem;
+  border-radius: 0.35rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+}
+
+a:active, a:hover {
+  background: #7008b0;
+  color: #fff;
+  transition: .3s;
+}
+.checkbtn{
+  font-size: 1.25rem;
+  color: #ffff;
+  float: right;
+  line-height: 4rem;
+  margin-right: 2.5rem;
+  cursor:pointer;
+  display:none;
+}
+#check{
+  display:none;
+}
 
 header {
   display: block;
@@ -34,30 +90,9 @@ header {
   color: hsl(0, 0%, 100%);
   font-size: 1rnav-linkem;
   text-decoration: none;
+  padding: 1rem 1rem;
 }
 
-.nav-menu {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;Z'
-  gap: 0.2rem;
-}
-
-.nav-menu li a {
-  text-decoration: none;
-  padding: 0.4rem 1rem;
-  color: rgb(77, 7, 164);
-  margin-right: 0.5rem;
-  border-radius: 0.55rem;
-  background-color: rgb(243, 234, 255);
-}
-
-.nav-menu li a:hover {
-  background: rgb(106, 12, 221);
-  color: #fff;
-}
 
 .parallax {
   position: relative;
@@ -88,17 +123,6 @@ header {
   transform: translateY(-50%);
   font-size: 4em;
   color: rgb(255, 255, 255);
-}
-.sub {
-  color: white;
-  position: relative;
-  padding: 1rem;
-  font-size: 3rem;
-}
-.subtitulo {
-  font-size: 1.2rem;
-  margin-bottom: 0.7rem;
-  padding: 1rem;
 }
 
 h1 {
@@ -137,12 +161,13 @@ h1 {
 }
 
 
-/*-----------------------------MEDIA----------------------*/
+/*---------------------MEDIA 1024-----------------------*/
 
 
 @media (max-width: 1024px){
+
 .parallax img#foguete {
-  bottom: 11rem;
+  bottom: 8rem;
 }
 
 .s1024 {
@@ -152,6 +177,7 @@ h1 {
   width: 100vw;
   -webkit-filter: drop-shadow(4px -1px 2px #222);
 }
+
 #estrelas_s1024 {
   mix-blend-mode: soft-light;
 }
@@ -163,9 +189,60 @@ h1 {
   display: none;
 }
 }
+/*---------------------MEDIA 768-----------------------*/
 
-@media (max-width: 768px) 
-{
+
+@media (max-width: 768px) {
+    .checkbtn {
+      display:block;
+      position: absolute;
+      width:100%;
+      float:right;
+      z-index: 1
+    }
+
+    label.nome {
+      margin-left: 4rem;
+      padding: 0 1rem;
+    
+    }
+  
+    ul {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #7008b0;
+        top: 7rem;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+    }
+    #check:checked ~ ul {
+      left: 0;
+  }
+
+    nav ul li {
+        display:block;
+        margin: 0.2rem 0;
+        line-height: 3rem;
+        height:3rem;
+        background:#7008b0;
+        color:#fff;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        background:#7008b0;
+        color:#fff;
+    
+    }
+    
+    a:active, a:hover {
+        background: #fff;
+        color: #5434af;
+    }
+
+
   #estrelas_s768 {
     mix-blend-mode: soft-light;
   }
@@ -173,14 +250,13 @@ h1 {
 #estrelas, #nuvem-fundo, #nuvem-meio, #nuvem-frente,.s1024 {
   display: none;
 }
+  .parallax img#foguete {
+  bottom: 3rem;
+    
+  }
   .s768 {
     display: flex;
     -webkit-filter: drop-shadow(4px -1px 2px #222);
-  }
-
-  .nav-menu {
-    font-size: 0.7rem;
-    transition: all 0.3s ease-in-out;
   }
 
   #titulo {
@@ -190,10 +266,18 @@ h1 {
     align-items: center;
     transition: all 0.02s ease-in-out;
     text-align: center;
+    z-index:1;
   }
 }
 
+
+/*---------------------MEDIA 425-----------------------*/
 @media (max-width: 425px) {
+  label.nome {
+    margin-left: 1.5rem;
+    padding: 0 2rem;
+  }
+
   #estrelas,
 #nuvem-fundo,
 #nuvem-meio,
@@ -202,9 +286,14 @@ h1 {
   display: none;
   text-align: center;
 }
-#titulo {
+footer .rodape {
   text-align: center;
 }
+#titulo {
+  margin-top: 4rem;
+  text-align: center;
+}
+
 .s425 {
   display: flex;
   -webkit-filter: drop-shadow(4px -1px 2px #222);

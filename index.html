@@ -10,21 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link href="/css/all.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
-      <a href="#" class="nome">Lucas Ritter</a>
-      <ul class="nav-menu">
-        <li><a href="https://lukebemis.github.io/github.pages/index.html" class="nav-link">Home</a></li>
-        <li><a href="https://lukebemis.github.io/github.pages/conteudo.html" class="nav-link">O Bootcamp</a></li>
-        <li><a href="https://lukebemis.github.io/github.pages/signup.html" class="nav-link">Quero Participar</a></li>
-        <li><a href="https://github.com/lukebemis" class="nav-link">GitHub</a></li>
-      </ul>
-      <i class="hamburguer --one"></i>
-      <i class="hamburguer --two"></i>
-      <i class="hamburguer --three"></i>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </label>
+        <label class="nome">Lucas Ritter</label>
+        <ul>
+            <li><a href="https://lukebemis.github.io/github.pages/index.html">Home</a></li>
+            <li><a href="https://lukebemis.github.io/github.pages/conteudo.html">Conhecer</a></li>
+            <li><a href="https://lukebemis.github.io/github.pages/signup.html">Participar</a></li>
+            <li><a href="https://github.com/lukebemis">Github</a></li>
+        </ul>
+    </nav>
     </header>
     <section class="parallax">
       <h2 id="titulo">From Zero to Hero</h2>
@@ -34,7 +37,8 @@
       <img src="./nuvem-frente.svg" alt="nuvem-frente" id="nuvem-frente"/>
       <img src="./foguete.svg" alt="foguete" id="foguete" />
       <img src="./planeta.svg" alt="planeta" id="planeta" />
-      <!--Aqui vão ficar as imagens responsivas-->
+      <!--imagens responsivas-->
+      <!--Foguete-->
       <!--Estrelas-->
       <img src="./estrelas_425.svg" alt="estrelas425" class="s425" id="estrelas_s425" />
       <img src="./estrelas_768.svg" alt="estrelas768" class="s768" id="estrelas_s768" />
