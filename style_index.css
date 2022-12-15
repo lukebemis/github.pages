@@ -19,6 +19,7 @@ body {
 }
 
 nav {
+  z-index:999;
   position: absolute;
   height: 2rem;
   width: 100%;
@@ -45,7 +46,7 @@ nav ul li {
   height: 10rem;
   opacity: 100%;
 }
-nav ul li a {
+  #botao {
   background:#fff;
   color: #7008b0;
   font-size: 1rem;
@@ -55,7 +56,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-a:active, a:hover {
+  #botao:hover {
   background: #7008b0;
   color: #fff;
   transition: .3s;
@@ -73,17 +74,6 @@ a:active, a:hover {
   display:none;
 }
 
-header {
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.8rem;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
-
 .nome {
   display:flex;
   margin-left: 1rem;
@@ -92,7 +82,6 @@ header {
   text-decoration: none;
   padding: 1rem 1rem;
 }
-
 
 .parallax {
   position: relative;
@@ -237,7 +226,7 @@ h1 {
     
     }
     
-    a:active, a:hover {
+        a:hover {
         background: #fff;
         color: #5434af;
     }
