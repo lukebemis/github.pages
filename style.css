@@ -16,6 +16,7 @@ body {
   max-height: 100vh;
 }
 
+
 header {
   display: block;
   top: 0;
@@ -26,7 +27,6 @@ header {
   align-items: center;
   z-index: 1000;
 }
-
 
 .nome {
   display:flex;
@@ -59,7 +59,6 @@ header {
   color: #fff;
 }
 
-
 .parallax {
   position: relative;
   display: flex;
@@ -80,7 +79,8 @@ header {
 }
 
 .parallax img#foguete {
-  bottom: -6rem;
+  bottom: -4rem;
+  z-index: 1;
 }
 #titulo {
   display:flex;
@@ -100,6 +100,7 @@ header {
   margin-bottom: 0.7rem;
   padding: 1rem;
 }
+
 h1 {
     padding: 1rem;
 }
@@ -129,8 +130,43 @@ h1 {
   background:rgb(174, 52, 255);
 }
 
+/*----RESPONSIVAS----*/
+
+.s1024, .s768, .s425 {
+  display: none;
+}
+
+
 /*-----------------------------MEDIA----------------------*/
 
+
+@media (max-width: 1024px){
+.parallax img#foguete {
+  bottom: 11rem;
+}
+
+.s1024 {
+  display: flex;
+  bottom: 0;
+  left: -50%;
+  width: 100vw;
+  -webkit-filter: drop-shadow(4px -1px 2px #222);
+}
+#estrelas_s1024 {
+  mix-blend-mode: soft-light;
+}
+
+#estrelas,
+#nuvem-fundo,
+#nuvem-meio,
+#nuvem-frente {
+  display: none;
+}
+}
+
+
+
+/* 
 @media (max-width: 993px){
   #titulo {
     text-align: center;
@@ -159,14 +195,23 @@ h1 {
 .parallax img#foguete {
   bottom: 12rem;
 }
-
 }
+*/
 
 @media (max-width: 768px) 
 {
-  #img {
-    height: -50%;
+  #estrelas_s768 {
+    mix-blend-mode: soft-light;
   }
+
+#estrelas, #nuvem-fundo, #nuvem-meio, #nuvem-frente,.s1024 {
+  display: none;
+}
+  .s768 {
+    display: flex;
+    -webkit-filter: drop-shadow(4px -1px 2px #222);
+  }
+
   .nav-menu {
     font-size: 0.7rem;
     transition: all 0.3s ease-in-out;
@@ -178,16 +223,29 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: all 0.02s ease-in-out;
+    text-align: center;
   }
 }
 
-@media (max-width: 587px) {
-#img {
-  height: -50%;
+@media (max-width: 425px) {
+  #estrelas,
+#nuvem-fundo,
+#nuvem-meio,
+#nuvem-frente,
+.s768, .s1024 {
+  display: none;
+  text-align: center;
+}
+#titulo {
+  text-align: center;
+}
+.s425 {
+  display: flex;
+  -webkit-filter: drop-shadow(4px -1px 2px #222);
 }
 
-.nav-menu {
-  display:none;
+#estrelas_s425 {
+  mix-blend-mode: soft-light;
 }
 
 }
